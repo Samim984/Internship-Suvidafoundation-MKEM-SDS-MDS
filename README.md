@@ -1,7 +1,7 @@
 🧠 Multi-Knowledge-Enhanced Model (MKEM) framework applied to both Single-Document    
                  Summarization (SDS) and Multi-Document Summarization (MDS)⬇️
 
-                 ⌛In an age where the world produces more news in a single day than a human can read in a lifetime, the ability to distill vast information into concise, meaningful summaries is no longer a luxury—it is a necessity. This thesis presents the Multi-Knowledge-Enhanced Model (MKEM) framework applied to both Single-Document Summarization (SDS) and Multi-Document Summarization (MDS).🧮
+⌛In an age where the world produces more news in a single day than a human can read in a lifetime, the ability to distill vast information into concise, meaningful summaries is no longer a luxury—it is a necessity. This thesis presents the Multi-Knowledge-Enhanced Model (MKEM) framework applied to both Single-Document Summarization (SDS) and Multi-Document Summarization (MDS).🧮
 
 📚MKEM story👇
 
