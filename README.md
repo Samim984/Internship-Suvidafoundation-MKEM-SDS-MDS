@@ -100,23 +100,33 @@ GPU usage is mostly marked as CPU in this dataset, implying room for improvement
 
 <img width="568" height="424" alt="ROUGE L score by SDS MDS" src="https://github.com/user-attachments/assets/9a819761-26df-4551-8acd-1c9e5a150e17" />
 <img width="431" height="280" alt="ROUGE L performance by SDS MDS" src="https://github.com/user-attachments/assets/f5162750-5ad3-439b-9d7c-b0160a1cef52" />
+
 🔍 Observation 1:
 Performance gap between SDS and MDS summarization tasks varies significantly by model.
 Models like PRIMERA and FLAN-T5 show higher ROUGE-L scores on MDS datasets (NewsSum, MultiNews) compared to SDS datasets (CNN DailyMail, XSum), indicating they are better at handling long, multi-document inputs.
 Conversely, models such as T5 and PEGASUS perform very well on SDS datasets but show a noticeable drop in performance on MDS datasets.
 This suggests that model architectures or training strategies influence their capability to summarize longer, more complex document collections, which is crucial for multi-document summarization tasks like Indian news aggregation.
+
 2️⃣Models Handling Long Documents (MDS) Better
+
 <img width="565" height="424" alt="Average ROUGE L SDS" src="https://github.com/user-attachments/assets/a57b0c99-04ce-4e3a-aaba-996bcc9a1088" />
+
 🔍 Observation 2:
 There is a noticeable trade-off between inference speed and accuracy across models. While models like PEGASUS and T5 have relatively faster inference times, they sometimes show lower ROUGE-L scores on longer documents. On the other hand, models like LED and PRIMERA, though slower, tend to deliver higher accuracy, indicating a balance needs to be struck depending on application needs (real-time vs quality-focused summarization).
+
 3️⃣Speed vs Accuracy Balance (Inference Time vs ROUGE-L)
+
 <img width="563" height="352" alt="Inference time vs Roug L" src="https://github.com/user-attachments/assets/6c7b80d5-1181-4dc3-9b97-39d6df3ae8c8" />
-🔍 Observation 3:¶
+
+🔍 Observation 3:
 Computational resources (CPU vs GPU) impact both runtime and feasibility of model deployment. Although most experiments ran on CPU in your data, models designed to leverage GPUs show potential for significantly reduced inference times, which is critical for scaling summarization in real-world applications.
+
 4️⃣ Impact of Computational Resources (GPU vs CPU)
+
 <img width="568" height="424" alt="Model by Computational Resource" src="https://github.com/user-attachments/assets/dceebcc0-96c0-453c-a2da-d84a99c079fe" />
 <img width="424" height="280" alt="ROUGE L distribution by Computational Resource" src="https://github.com/user-attachments/assets/b3a0a303-ec3d-445d-b393-57565a37a2e8" />
-🔍 Observation 4:¶
+
+🔍 Observation 4:
 The performance gap between SDS and MDS summarization varies by model: Some models maintain relatively stable performance across both SDS and MDS datasets, while others show significant drops on MDS datasets. This highlights the importance of selecting models based on the document complexity and length inherent in the target summarization task.
 
 
