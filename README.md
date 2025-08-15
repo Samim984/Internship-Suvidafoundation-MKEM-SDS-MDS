@@ -79,7 +79,7 @@ MKEM-Summarization/
 
 Clone the repository:
 
-git clone https://github.com/username/MKEM-Summarization.git
+git clone https://github.com/Samim984/Internship-Suvidafoundation-MKEM-SDS-MDS
 cd MKEM-Summarization
 
 
