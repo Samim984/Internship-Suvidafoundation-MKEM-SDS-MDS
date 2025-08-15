@@ -3,6 +3,104 @@
 
 ⌛In an age where the world produces more news in a single day than a human can read in a lifetime, the ability to distill vast information into concise, meaningful summaries is no longer a luxury—it is a necessity. This thesis presents the Multi-Knowledge-Enhanced Model (MKEM) framework applied to both Single-Document Summarization (SDS) and Multi-Document Summarization (MDS).🧮
 
+📌 Project Description
+
+This project explores abstractive text summarization using multiple state-of-the-art transformer-based models, applied to both Single Document Summarization (SDS) and Multi Document Summarization (MDS).
+We implemented a two-phase approach:
+
+Phase 1: Training & evaluating the Parallel Hierarchical Transformer (PHT) model and 7 other models individually on SDS and MDS datasets.
+
+Phase 2: Integrating and comparing results from all models within the Multi-Knowledge-Enhanced Model (MKEM) framework to identify strengths, trade-offs, and optimal model selection for different use cases.
+
+📂 Dataset Info
+
+We used multiple benchmark and custom datasets:
+
+CNN/DailyMail (SDS)
+
+XSum (SDS)
+
+MultiNews (MDS)
+
+NewsSum – a custom dataset of 1005 manually curated Indian news articles with human-written summaries, covering Politics, Business, Sports, and more.
+
+Each dataset contains:
+
+Headline (x1)
+
+Full News Article (x2)
+
+Category (x3)
+
+Reference Summary (y)
+
+🧠 Models Used
+
+We implemented 8 transformer-based summarization models:
+
+T5 – Text-to-Text Transfer Transformer
+
+PEGASUS – Pre-training with Gap Sentences Generation
+
+BART – Bidirectional and Auto-Regressive Transformers
+
+ProphetNet – Predicting n-grams for improved sequence generation
+
+FLAN-T5 – Instruction-tuned T5 for better generalization
+
+PRIMERA – Pre-trained for Multi-Document Summarization
+
+BigBird-Pegasus – Long-document transformer with sparse attention
+
+LED – Longformer Encoder-Decoder for processing long inputs
+
+⚙️ How to Run the Notebooks
+
+MKEM-Summarization/
+│── Phase2_Final_Notebook.ipynb     # Main combined evaluation & comparison
+│── notebooks/                      # All individual model notebooks
+│    ├── 1_T5.ipynb
+│    ├── 2_PEGASUS.ipynb
+│    ├── 3_BART.ipynb
+│    ├── 4_ProphetNet.ipynb
+│    ├── 5_FLAN-T5.ipynb
+│    ├── 6_PRIMERA.ipynb
+│    ├── 7_BigBird.ipynb
+│    ├── 8_LED.ipynb
+│    └── PHT_Model.ipynb
+│── datasets/                       # Preprocessed datasets
+│    ├── newsum_cleaned.csv
+│    ├── cnn_dailymail.csv
+│    ├── xsum.csv
+│    └── multinews.csv
+│── README.md
+
+🔹 Steps to Run
+
+Clone the repository:
+
+git clone https://github.com/username/MKEM-Summarization.git
+cd MKEM-Summarization
+
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+
+Run the final Phase 2 notebook for complete results:
+
+jupyter notebook Phase2_Final_Notebook.ipynb
+
+
+For individual model runs:
+Open any notebook from the notebooks/ folder and execute all cells.
+
+📌 Acknowledgements
+
+This project was developed as part of a research internship, combining multiple transformer models for robust abstractive summarization in both SDS and MDS contexts.
+
+
 📚MKEM story👇
 
 <img width="1536" height="1024" alt="MEKM FrameWork" src="https://github.com/user-attachments/assets/064d0e10-7967-4c85-a2fe-b09769d230e2" />
