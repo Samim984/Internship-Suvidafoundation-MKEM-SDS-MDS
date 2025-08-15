@@ -166,7 +166,9 @@ Open any notebook from the notebooks/ folder and execute all cells.
 📌 Internship Details
 
 Organization: Suvida Foundation
+
 Project Duration: 2025
+
 Role: Data Science Intern – NLP & Summarization Research
 
 📌 Acknowledgements
