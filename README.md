@@ -163,6 +163,12 @@ jupyter notebook Phase2_Final_Notebook.ipynb
 For individual model runs:
 Open any notebook from the notebooks/ folder and execute all cells.
 
+📌 Internship Details
+
+Organization: Suvida Foundation
+Project Duration: 2025
+Role: Data Science Intern – NLP & Summarization Research
+
 📌 Acknowledgements
 
 This project was developed as part of a research internship, combining multiple transformer models for robust abstractive summarization in both SDS and MDS contexts.
